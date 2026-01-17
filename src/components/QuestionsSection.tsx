@@ -7,7 +7,7 @@ const QuestionsSection = () => (
             <div className="my-12 w-fit">
                 <H4 skipCenter>1. What exactly is Parlocula?</H4>
                 <Text skipCenter>Parlocula is a community-driven social platform built around movies and shows (cinements).</Text>
-                <Text skipCenter>Instead of endless feeds, Parlocula gives each cinement its own space — with discussions, shelves, and people who genuinely care.</Text>
+                <Text skipCenter>Instead of endless feeds, Parlocula gives each cinement its own space - with discussions, shelves, and people who genuinely care.</Text>
             </div>
             <div className="my-12 w-fit">
                 <H4 skipCenter>2. How is Parlocula different from other social platforms?</H4>
@@ -39,7 +39,7 @@ const QuestionsSection = () => (
                 <H4 skipCenter>4. Do I need to be a film expert to join?</H4>
 
                 <Text skipCenter>
-                    Not at all! Whether you’re a casual watcher or a hardcore fan, Parlocula is built for curiosity, not expertise.
+                    Not at all! Whether you're a casual watcher or a hardcore fan, Parlocula is built for curiosity, not expertise.
                 </Text>
 
                 <Text skipCenter strong>Everyone starts somewhere.</Text>

@@ -1,6 +1,6 @@
-# Parlocula — Waitlist Website
+# Parlocula - Waitlist Website
 
-Parlocula is a community-first social platform built for people who don’t just watch movies and shows — but love talking about them.
+Parlocula is a community-first social platform built for people who don't just watch movies and shows - but love talking about them.
 
 This repository contains the official **Parlocula Waitlist Landing Page**, designed to introduce the vision, explain the philosophy, and onboard early believers before the public launch.
 
@@ -8,7 +8,7 @@ This repository contains the official **Parlocula Waitlist Landing Page**, desig
 
 ## 🌌 What is Parlocula?
 
-Parlocula is a home for **Cinements** — movies and shows — and the conversations around them.
+Parlocula is a home for **Cinements** - movies and shows - and the conversations around them.
 
 Unlike traditional social platforms, Parlocula is:
 
@@ -65,8 +65,8 @@ git clone https://github.com/SadiqNaqvi/Parlocula-Waitlist.git
 cd Parlocula-Waitlist
 npm install
 npm run dev
-Open http://localhost:3000 to view the site.
 ```
+Open http://localhost:3000 to view the site.
 
 ---
 
@@ -83,4 +83,4 @@ Features and copy may evolve as Parlocula grows.
 For questions, ideas, or early feedback:
 Email: contact.qcore@gmail.com
 
-© Parlocula — Where Stories Bring Us Together.
+© Parlocula - Where Stories Bring Us Together.

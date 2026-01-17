@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Parlocula" }],
   creator: "Parlocula",
   openGraph: {
-    title: "Parlocula — Where Stories Bring Us Together",
+    title: "Parlocula - Where Stories Bring Us Together",
     description:
       "A community-first platform where movies and shows live beyond the credits. Join Parlocula and be part of meaningful cinement conversations.",
     url: "https://parlocula.vercel.app",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: "https://parlocula.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Parlocula — Where Stories Bring Us Together",
+        alt: "Parlocula - Where Stories Bring Us Together",
       },
     ],
     locale: "en_US",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Parlocula — Where Stories Bring Us Together",
+    title: "Parlocula - Where Stories Bring Us Together",
     description:
-      "Join Parlocula — a community for people who love movies, shows, and meaningful cinement discussions.",
+      "Join Parlocula - a community for people who love movies, shows, and meaningful cinement discussions.",
     images: ["https://parlocula.vercel.app/og-image.png"],
   },
   robots: {
