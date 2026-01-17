@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserratFont = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoFont = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -25,8 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${robotoFont.variable} ${montserratFont.variable} antialiased`}
       >
+        <Toaster swipeDirections={["bottom", "left", "right"]} />
         {children}
       </body>
     </html>

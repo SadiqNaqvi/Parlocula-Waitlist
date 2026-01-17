@@ -1,0 +1,1 @@
+export const emailPattern = /^[a-zA-Z]+[a-zA-Z0-9-]{2,}\@+[a-z]{4,}\.[a-z]{3,}$/;
