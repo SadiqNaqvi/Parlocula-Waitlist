@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Parlocula — Waitlist Website
 
-## Getting Started
+Parlocula is a community-first social platform built for people who don’t just watch movies and shows — but love talking about them.
 
-First, run the development server:
+This repository contains the official **Parlocula Waitlist Landing Page**, designed to introduce the vision, explain the philosophy, and onboard early believers before the public launch.
+
+---
+
+## 🌌 What is Parlocula?
+
+Parlocula is a home for **Cinements** — movies and shows — and the conversations around them.
+
+Unlike traditional social platforms, Parlocula is:
+
+- Topic-first, not feed-first
+- Community-driven, not algorithm-driven
+- Built for depth, not dopamine
+
+Every cinement lives beyond the credits through:
+
+- Dedicated cinement wiki pages
+- Structured discussion threads
+- Personal shelves to track and share your journey
+
+---
+
+## 🚀 What This Website Does
+
+This waitlist page allows users to:
+
+- Understand what Parlocula is and why it exists
+- Learn what makes it different from existing platforms
+- Join the waitlist with their email
+- Secure early access perks
+
+🎖️ **Early users (first 100 members)** receive a permanent **Top 100 Parlocula Badge** on their profile.
+
+---
+
+## 🧠 Core Sections
+
+- Hero with waitlist signup
+- What is Parlocula
+- Why Parlocula exists
+- Features overview
+- Early access benefits
+- FAQ
+- Footer with legal links
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Deployed on Vercel
+
+---
+
+## 📦 Local Setup
 
 ```bash
+git clone https://github.com/SadiqNaqvi/Parlocula-Waitlist.git
+cd Parlocula-Waitlist
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Open http://localhost:3000 to view the site.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧩 Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🚧 Pre-launch / Waitlist Phase
 
-## Learn More
+Features and copy may evolve as Parlocula grows.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📩 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For questions, ideas, or early feedback:
+Email: contact.qcore@gmail.com
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© Parlocula — Where Stories Bring Us Together.
