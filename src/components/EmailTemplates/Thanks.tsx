@@ -14,7 +14,7 @@ import {
 } from '@react-email/components';
 
 const ThankingEmailTemplate = () => {
-    const previewText = `You have been added to the waitlist.`;
+    const previewText = "You have been added to the waitlist.";
 
     return (
         <Html>
