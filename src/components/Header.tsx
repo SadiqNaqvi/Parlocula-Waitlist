@@ -3,19 +3,24 @@ import WaitListForm from "./WaitListForm";
 
 export const WaitListHeader = () => (
     <header className="px-4">
-        <div className="mb-6 mx-auto w-fit">
-            <LogoIcon className="size-[50px] mx-auto" />
-        </div>
+        <div className="w-full">
+            <section>
+                <div className="mb-6 mx-auto w-fit">
+                    <LogoIcon className="size-12 mx-auto" />
+                </div>
 
-        <h1 className="text-3xl sm:text-5xl px-4  font-semibold text-center">
-            <p>Join the waitlist for</p>
-            <p>Parlocula.</p>
-        </h1>
-        <h2 className="mt-2 font-semibold text-center">Where Stories Bring Us Together.</h2>
-        <WaitListForm />
-        <Text strong>You will be notified when Parlocula is launched at the provided email.</Text>
+                <h1 className="text-3xl sm:text-5xl px-4  font-semibold text-center">
+                    <p>Join the waitlist for</p>
+                    <p>Parlocula.</p>
+                </h1>
+                <h2 className="mt-2 font-semibold text-center">The Cinematic Planet.</h2>
+            </section>
+            <WaitListForm />
+        </div>
+        <Text className="mt-auto">You will be notified when Parlocula is launched at the provided email.</Text>
     </header>
 );
+
 
 export const ReleasedHeader = ({ link }: { link: string }) => (
     <header className="px-4">

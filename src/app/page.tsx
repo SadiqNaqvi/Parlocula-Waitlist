@@ -1,4 +1,7 @@
-import { EarlyAccess, Footer, QuestionsSection, ReleasedHeader, WaitListHeader, WhatIsParloculaSection, WhatParloculaOffers, WhyParloculaExistsSection } from "@/components";
+import { EarlyAccess, Footer, QuestionsSection, ReleasedHeader, WaitListHeader, WhatIsParloculaSection, VocabularySection, WhyParloculaExistsSection } from "@/components";
+<WhoIsParloculaFor />
+import NotAnAppSection from "@/components/NotAnAppSection";
+import WhoIsParloculaFor from "@/components/WhoIsParloculaFor";
 import { checkParloculaLink } from "@/lib/actions";
 
 
@@ -11,9 +14,9 @@ const WaitListLanding = () => {
         <WaitListHeader />
         <WhatIsParloculaSection />
         <WhyParloculaExistsSection />
-        <WhatParloculaOffers />
-        <EarlyAccess />
-        <QuestionsSection />
+        <NotAnAppSection />
+        <VocabularySection />
+        <WhoIsParloculaFor />
         <Footer />
       </main>
     </>
@@ -29,9 +32,11 @@ const ReleasedLanding = ({ link }: { link: string }) => {
         <ReleasedHeader link={link} />
         <WhatIsParloculaSection />
         <WhyParloculaExistsSection />
-        <WhatParloculaOffers />
-        <EarlyAccess />
-        <QuestionsSection />
+        <NotAnAppSection />
+        <VocabularySection />
+        <WhoIsParloculaFor />
+        {/* <EarlyAccess />
+        <QuestionsSection /> */}
         <Footer link={link} />
       </main>
     </>

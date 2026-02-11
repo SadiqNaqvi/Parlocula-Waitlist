@@ -1,24 +1,25 @@
-import { H3, H4, Section, UL, SubSection, H5, Text } from "./foundations";
+import { H3, H5, Section, SubSection, Text, UL } from "./foundations";
 
 const WhatIsParloculaSection = () => (
-    <Section>
-        <div>
-            <H3>What is Parlocula?</H3>
-            <Text ghost>More than a social app. More than a database.</Text>
-        </div>
-        <div className="mt-6">
-            <h5 className="mt-6 text-center font-semibold">Parlocula is a home for Movies and Shows (Cinements).</h5>
-            <SubSection>
-                <H5>Here, every cinement has:</H5>
-                <UL>
-                    <li>A living wiki</li>
-                    <li>Dedicated discussion threads</li>
-                    <li>People who actually care</li>
-                </UL>
-            </SubSection>
-        </div>
-        <p className="mt-8 font-semibold text-center">No noise. No trends. No doomscrolling.</p>
-    </Section>
+    <>
+        <Section>
+            <H3>What Is Parlocula?</H3>
+            <Text>You need to know before you dive in.</Text>
+        </Section>
+        <Section>
+            <div>
+                <div className="w-fit mx-auto">
+                    <Text ghost className="text-left">Parlocula is</Text>
+                    <H3 className="text-left">The Cinematic Planet.</H3>
+                </div>
+                <Text className="mt-4">It{"'"}s a place where movies and shows stay alive through people, not feeds.</Text>
+            </div>
+            <div className="mt-20">
+                <h5 className="text-center font-semibold">Parlocula is a home for Taleons and Taleonists.</h5>
+                <Text ghost>Keep going, we got more.</Text>
+            </div>
+        </Section>
+    </>
 )
 
 export default WhatIsParloculaSection;

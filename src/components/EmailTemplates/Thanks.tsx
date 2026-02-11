@@ -10,9 +10,8 @@ import {
     Preview,
     Section,
     Tailwind,
-    Text
+    Text,
 } from '@react-email/components';
-import { AppIcon } from '../Icons';
 
 const ThankingEmailTemplate = () => {
     const previewText = `You have been added to the waitlist.`;
@@ -27,9 +26,14 @@ const ThankingEmailTemplate = () => {
             >
                 <Body className="mx-auto my-auto bg-white px-2 font-sans">
                     <Preview>{previewText}</Preview>
-                    <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-[#eaeaea] border-solid p-[20px]">
-                        <Section className="mt-[32px]">
-                            <AppIcon className='size-[40px] mx-auto' />
+                    <Container className="mx-auto my-10 max-w-116.25 rounded border border-zinc-500/30 border-solid p-5">
+                        <Section className="mt-8">
+                            <Img
+                                height={64}
+                                width={64}
+                                src="https://parlocula.vercel.app/apple-touch-icon.png"
+                                className="object-contain mx-auto"
+                            />
                         </Section>
                         <Heading className="mx-0 my-[30px] p-0 text-center font-normal text-[24px] text-black">
                             Thank You For Waiting.

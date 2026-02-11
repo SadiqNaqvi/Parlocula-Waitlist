@@ -1,9 +1,9 @@
 import { PropsWithChildren } from "react";
 import { AppIcon } from "./Icons";
+import { twMerge } from "tailwind-merge";
 
 export const LogoIcon = ({ className }: { className?: string }) => (
     <AppIcon className={className} />
-
 )
 
 export const Input = ({ name, placeholder, max, min, disabled }: { name: string, max?: number, min?: number, placeholder?: string, disabled?: boolean }) => (
@@ -18,34 +18,40 @@ export const Input = ({ name, placeholder, max, min, disabled }: { name: string,
 
 )
 
-export const H3 = ({ children, className = '', skipCenter }: PropsWithChildren<{ className?: string, skipCenter?: boolean }>) => (
-    <h3 className={`text-2xl sm:text-4xl ${skipCenter ? "" : "text-center"} font-semibold ` + className}>{children}</h3>
+type ChildrenWithClassName = PropsWithChildren<{ className?: string }>;
+
+export const H3 = ({ children, className }: ChildrenWithClassName) => (
+    <h3 className={twMerge("text-2xl sm:text-4xl text-center font-semibold", className)}>
+        {children}
+    </h3>
 )
 
-export const H4 = ({ children, className = '', skipCenter }: PropsWithChildren<{ className?: string, skipCenter?: boolean }>) => (
-    <h4 className={`text-xl ${skipCenter ? "" : "text-center"} font-semibold ` + className}>{children}</h4>
+export const H4 = ({ children, className }: ChildrenWithClassName) => (
+    <h4 className={twMerge("text-xl text-center font-semibold", className)}>
+        {children}
+    </h4>
 )
 
-export const H5 = ({ children, className = '' }: PropsWithChildren<{ className?: string, skipCenter?: boolean }>) => (
-    <h5 className={"-ml-4 font-semibold " + className}>{children}</h5>
+export const H5 = ({ children, className }: ChildrenWithClassName) => (
+    <h5 className={twMerge("font-semibold", className)}>{children}</h5>
 )
 
-export const Section = ({ children, skipCenter }: PropsWithChildren<{ skipCenter?: boolean }>) => (
+export const Section = ({ children, className }: ChildrenWithClassName) => (
     <section>
-        <div className={`max-w-screen-md ${skipCenter ? '' : " mx-auto"} px-4`}>
+        <div className={twMerge("max-w-2xl md:max-w-3xl mx-auto px-4", className)}>
             {children}
         </div>
-    </section >
+    </section>
 )
 
-export const SubSection = ({ children, skipCenter }: PropsWithChildren<{ margin?: string, skipCenter?: boolean }>) => (
-    <div className={`w-fit ${skipCenter ? '' : " mx-auto"} my-8`}> {children}</div >
+export const SubSection = ({ children, className }: ChildrenWithClassName) => (
+    <div className={twMerge("w-fit mx-auto my-8", className)}> {children}</div >
 )
 
-export const UL = ({ children, skipCenter }: PropsWithChildren<{ skipCenter?: boolean }>) => (
-    <ul className={`my-4 w-fit ${skipCenter ? '' : " mx-auto"} list-disc list-inside space-y-2 text-sm`}> {children}</ul>
+export const UL = ({ children, className }: ChildrenWithClassName) => (
+    <ul className={twMerge("my-4 w-fit mx-auto list-disc space-y-2 text-sm", className)}> {children}</ul>
 )
 
-export const Text = ({ children, ghost, strong, skipCenter }: PropsWithChildren<{ ghost?: boolean, strong?: boolean, skipCenter?: boolean }>) => (
-    <p className={`my-2 ${skipCenter ? "" : "text-center"} ${ghost ? "text-zinc-500 text-sm" : ''} ${strong ? "font-semibold" : ''}`}>{children}</p>
+export const Text = ({ children, ghost, strong, className }: ChildrenWithClassName & { ghost?: boolean, strong?: boolean }) => (
+    <p className={twMerge("my-2 text-center", ghost ? "text-zinc-500 text-sm" : '', strong ? "font-semibold" : '', className)}>{children}</p>
 )

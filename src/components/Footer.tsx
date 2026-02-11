@@ -8,8 +8,8 @@ const FooterMonogram = () => (
 
 const WaitListFooter = ({ link }: { link?: string }) => (
     <footer className="px-4">
-        <H3>This is only the start of something GRAND.</H3>
-        <Text>Join Parlocula and be part of a community where cinements live on.</Text>
+        <H3>Look who is already hooked up.</H3>
+        <Text>What are you waiting for? Dive in and Let the gravity of Parlocula pulls you deep.</Text>
 
         {link ? (
             <div className="mt-4 w-fit mx-auto">
@@ -19,8 +19,9 @@ const WaitListFooter = ({ link }: { link?: string }) => (
             <WaitListForm />
         )}
 
-        <div className="mt-10 w-full max-w-screen-md mx-auto">
+        <div className="mt-10 w-full max-w-3xl mx-auto">
             <FooterMonogram />
+            <Text className="mt-2">Built for depth. Designed for memory.</Text>
             <div className="mt-6">
                 <Text ghost>All Rights Reserved | QCore Technologies 2021</Text>
                 <Text ghost>
